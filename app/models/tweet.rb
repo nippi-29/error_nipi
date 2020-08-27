@@ -1,6 +1,6 @@
 class Tweet < ApplicationRecord
   validates :text, presence: true
-  belongs_to :user
+  belongs_to :users
   has_many :comments
 
   def self.search(search)
