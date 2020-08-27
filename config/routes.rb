@@ -3,7 +3,7 @@ Rails.application.routes.draw do
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.
   root to: 'tweets#index'
   resources :tweets do
-    resources :comments, only: :create,
+    resources :comments, only: :create
     collection do
       get 'search'
     end
